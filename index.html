@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love Kehinde ❤️</title>
+    <meta name="description" content="A special Valentine's message for my love Kehinde">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'valentine-pink': '#ff69b4',
+                        'love-red': '#ff1493',
+                        'soft-pink': '#ffb6c1',
+                        'romantic-purple': '#dda0dd'
+                    },
+                    fontFamily: {
+                        'cursive': ['"Brush Script MT"', 'cursive'],
+                        'romantic': ['"Great Vibes"', 'cursive']
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'heartbeat': 'heartbeat 1.5s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        heartbeat: {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.1)' }
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.7 }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        
+        body {
+            background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 50%, #dda0dd 100%);
+            min-height: 100vh;
+        }
+        
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+        }
+        
+        .heart:before,
+        .heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: #ff1493;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        
+        .heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        
+        .message-container {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 3px solid #ff69b4;
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+        }
+        
+        .floating-heart {
+            position: absolute;
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+    <!-- Floating hearts background -->
+    <div class="floating-heart top-10 left-10 text-pink-300 text-4xl" style="animation-delay: 0s;">❤️</div>
+    <div class="floating-heart top-20 right-20 text-pink-300 text-3xl" style="animation-delay: 1s;">❤️</div>
+    <div class="floating-heart bottom-20 left-20 text-pink-300 text-5xl" style="animation-delay: 2s;">❤️</div>
+    <div class="floating-heart bottom-10 right-10 text-pink-300 text-4xl" style="animation-delay: 3s;">❤️</div>
+    <div class="floating-heart top-1/3 left-1/4 text-pink-300 text-6xl" style="animation-delay: 4s;">❤️</div>
+    
+    <div class="container mx-auto max-w-4xl">
+        <!-- Header with title -->
+        <header class="text-center mb-8">
+            <h1 class="text-5xl md:text-6xl font-romantic text-love-red mb-4 animate-pulse-glow">
+                Happy Valentine's Day
+            </h1>
+            <div class="flex justify-center items-center space-x-4">
+                <i class="fas fa-heart text-love-red text-3xl animate-heartbeat"></i>
+                <h2 class="text-4xl md:text-5xl font-romantic text-valentine-pink">
+                    My Dearest Kehinde
+                </h2>
+                <i class="fas fa-heart text-love-red text-3xl animate-heartbeat" style="animation-delay: 0.5s"></i>
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <main class="mb-12">
+            <!-- Love message card -->
+            <div class="message-container rounded-3xl p-8 md:p-12 mb-8 transform hover:scale-[1.02] transition-transform duration-300">
+                <div class="text-center">
+                    <div class="flex justify-center mb-6">
+                        <div class="heart bg-love-red mx-auto"></div>
+                    </div>
+                    
+                    <p class="text-2xl md:text-3xl font-cursive text-gray-800 mb-6 leading-relaxed">
+                        "To the one who makes my heart skip a beat every single day..."
+                    </p>
+                    
+                    <div class="space-y-4 text-lg md:text-xl text-gray-700">
+                        <p class="mb-4">
+                            My darling Kehinde, on this special day dedicated to love, I want you to know how incredibly grateful I am to have you in my life. You are the sunshine that brightens my darkest days and the moonlight that guides me through the night.
+                        </p>
+                        
+                        <p class="mb-4">
+                            Every moment with you feels like a beautiful dream I never want to wake up from. Your smile is my favorite sight, your laughter is my favorite sound, and your love is the greatest gift I've ever received.
+                        </p>
+                        
+                        <p class="text-2xl font-romantic text-love-red mb-6">
+                            You are my forever Valentine ❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo gallery -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="relative overflow-hidden rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img 
+                        src="https://picsum.photos/400/300?random=1" 
+                        alt="Romantic sunset for my love Kehinde" 
+                        class="w-full h-64 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-pink-600/50 to-transparent flex items-end">
+                        <p class="text-white p-4 text-lg font-semibold">Our Beautiful Memories</p>
+                    </div>
+                </div>
+                
+                <div class="relative overflow-hidden rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img 
+                        src="https://picsum.photos/400/300?random=2" 
+                        alt="Love blossoms for Kehinde" 
+                        class="w-full h-64 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-romantic-purple/50 to-transparent flex items-end">
+                        <p class="text-white p-4 text-lg font-semibold">Endless Love</p>
+                    </div>
+                </div>
+                
+                <div class="relative overflow-hidden rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img 
+                        src="https://picsum.photos/400/300?random=3" 
+                        alt="Hearts and romance for Kehinde" 
+                        class="w-full h-64 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-love-red/50 to-transparent flex items-end">
+                        <p class="text-white p-4 text-lg font-semibold">Forever Yours</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Love reasons -->
+            <div class="bg-white/80 rounded-2xl p-8 shadow-lg">
+                <h3 class="text-3xl font-romantic text-valentine-pink text-center mb-6">
+                    Why I Love You
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start space-x-3 p-4 bg-soft-pink/30 rounded-xl">
+                        <i class="fas fa-heart text-love-red text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800">Your Beautiful Heart</h4>
+                            <p class="text-gray-700">You have the kindest, most compassionate heart I've ever known</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3 p-4 bg-soft-pink/30 rounded-xl">
+                        <i class="fas fa-smile text-love-red text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800">Your Amazing Smile</h4>
+                            <p class="text-gray-700">Your smile lights up my world brighter than a thousand suns</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3 p-4 bg-soft-pink/30 rounded-xl">
+                        <i class="fas fa-star text-love-red text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800">Your Wonderful Soul</h4>
+                            <p class="text-gray-700">You make every moment magical with your beautiful spirit</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3 p-4 bg-soft-pink/30 rounded-xl">
+                        <i class="fas fa-magic text-love-red text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800">Your Magical Presence</h4>
+                            <p class="text-gray-700">Being with you feels like living in a beautiful fairy tale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Interactive love message -->
+        <div class="text-center mb-8">
+            <button id="loveButton" class="bg-love-red hover:bg-valentine-pink text-white font-bold py-4 px-8 rounded-full text-xl transform hover:scale-105 transition-all duration-300 shadow-lg animate-bounce">
+                <i class="fas fa-heart mr-2"></i>
+                Click for a Special Message
+                <i class="fas fa-heart ml-2"></i>
+            </button>
+            <div id="specialMessage" class="mt-6 hidden">
+                <p class="text-2xl font-romantic text-white bg-love-red/80 p-6 rounded-2xl shadow-lg">
+                    Kehinde, my love for you grows stronger with each passing day. 
+                    You are my everything, today and always! 💖
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center py-8">
+            <div class="flex justify-center space-x-6 mb-4">
+                <i class="fas fa-heart text-love-red text-2xl animate-pulse"></i>
+                <i class="fas fa-kiss-wink-heart text-valentine-pink text-2xl animate-pulse" style="animation-delay: 0.2s"></i>
+                <i class="fas fa-heartbeat text-romantic-purple text-2xl animate-pulse" style="animation-delay: 0.4s"></i>
+            </div>
+            <p class="text-xl font-romantic text-white">
+                Forever and Always, Your Valentine 💝
+            </p>
+            <p class="text-lg text-white mt-2">
+                Made with infinite love for my precious Kehinde
+            </p>
+            <div class="mt-6 text-white/80">
+                <p class="text-sm">© 2024 All my love reserved for Kehinde</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Define love messages
+        const loveMessages = [
+            "Kehinde, every day with you feels like Valentine's Day! 💖",
+            "You are the missing piece that makes my life complete, my love! 💕",
+            "My heart beats only for you, today and forever! ❤️",
+            "You are the most beautiful person inside and out, Kehinde! 🌹",
+            "I fall in love with you more every single day! 💘",
+            "You are my greatest adventure and my safest home! 🏡💖"
+        ];
+
+        // Interactive button functionality
+        document.getElementById('loveButton').addEventListener('click', function() {
+            const messageDiv = document.getElementById('specialMessage');
+            const messageText = messageDiv.querySelector('p');
+            
+            // Get random love message
+            const randomMessage = loveMessages[Math.floor(Math.random() * loveMessages.length)];
+            messageText.textContent = randomMessage;
+            
+            // Show message with animation
+            messageDiv.classList.remove('hidden');
+            messageDiv.classList.add('animate__animated', 'animate__fadeInUp');
+            
+            // Change button text temporarily
+            const originalText = this.innerHTML;
+            this.innerHTML = '<i class="fas fa-heart mr-2"></i> More Love Coming! <i class="fas fa-heart ml-2"></i>';
+            this.classList.remove('animate-bounce');
+            this.classList.add('bg-valentine-pink');
+            
+            // Reset button after 2 seconds
+            setTimeout(() => {
+                this.innerHTML = originalText;
+                this.classList.add('animate-bounce');
+                this.classList.remove('bg-valentine-pink');
+            }, 2000);
+        });
+
+        // Create more floating hearts
+        function createFloatingHearts() {
+            const container = document.body;
+            for (let i = 0; i < 15; i++) {
+                const heart = document.createElement('div');
+                heart.innerHTML = '❤️';
+                heart.className = 'floating-heart absolute text-pink-300';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.top = Math.random() * 100 + 'vh';
+                heart.style.fontSize = (Math.random() * 20 + 20) + 'px';
+                heart.style.opacity = Math.random() * 0.3 + 0.1;
+                heart.style.animationDuration = (Math.random() * 4 + 3) + 's';
+                heart.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(heart);
+            }
+        }
+
+        // Initialize floating hearts
+        createFloatingHearts();
+
+        // Add romantic background music control (simulated)
+        const musicButton = document.createElement('button');
+        musicButton.innerHTML = '<i class="fas fa-music"></i> Romantic Mode';
+        musicButton.className = 'fixed bottom-4 right-4 bg-white/90 text-love-red px-4 py-2 rounded-full shadow-lg hover:bg-white transition-colors z-50';
+        musicButton.onclick = function() {
+            alert("🎵 Playing romantic music for my love Kehinde... 💖\n\nImagine your favorite love song playing in the background!");
+            this.innerHTML = '<i class="fas fa-volume-up"></i> Love is in the Air!';
+            setTimeout(() => {
+                this.innerHTML = '<i class="fas fa-music"></i> Romantic Mode';
+            }, 3000);
+        };
+        document.body.appendChild(musicButton);
+    </script>
+</body>
+</html>
